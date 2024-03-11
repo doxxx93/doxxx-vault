@@ -15,4 +15,4 @@ Examples include: Complete app mockup; Develop project plan; Execute business de
 **To Archives**: Since our goal is rapid project turnover, this is one of the most common flows, moving completed or inactive projects to Archives for future reference.
 
 _From [PARA Part 2: Operations Manual](https://fortelabs.co/blog/p-a-r-a-ii-operations-manual/)_
- 
+
