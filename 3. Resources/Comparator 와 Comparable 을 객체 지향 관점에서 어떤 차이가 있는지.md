@@ -92,6 +92,59 @@ public final class Integer extends Number
 `Comparator<T> comparator = (T t1, T t2) -> { /* 비교 로직 */ }`
 과 같이 람다식을 통해 동일한 T 타입 객체 두개를 비교하고 int 값을 반환하도록 구현합니다.
 
+### 예시
+
+`String`의 예시를 들어보겠습니다.
+
+```java
+public final class String implements java.io.Serializable, Comparable<String>, CharSequence,
+        Constable, ConstantDesc {
+
+    public int compareTo(String anotherString) {
+        byte[] v1 = value;
+        byte[] v2 = anotherString.value;
+        byte coder = coder();
+        if (coder == anotherString.coder()) {
+            return coder == LATIN1 ? StringLatin1.compareTo(v1, v2)
+                    : StringUTF16.compareTo(v1, v2);
+        }
+        return coder == LATIN1 ? StringLatin1.compareToUTF16(v1, v2)
+                : StringUTF16.compareToLatin1(v1, v2);
+    }
+
+    public static final Comparator<String> CASE_INSENSITIVE_ORDER
+            = new CaseInsensitiveComparator();
+
+    private static class CaseInsensitiveComparator
+            implements Comparator<String>, java.io.Serializable {
+        
+        @Serial
+        private static final long serialVersionUID = 8575799808933029326L;
+
+        public int compare(String s1, String s2) {
+            byte[] v1 = s1.value;
+            byte[] v2 = s2.value;
+            byte coder = s1.coder();
+            if (coder == s2.coder()) {
+                return coder == LATIN1 ? StringLatin1.compareToCI(v1, v2)
+                        : StringUTF16.compareToCI(v1, v2);
+            }
+            return coder == LATIN1 ? StringLatin1.compareToCI_UTF16(v1, v2)
+                    : StringUTF16.compareToCI_Latin1(v1, v2);
+        }
+
+        @Serial
+        private Object readResolve() {
+            return CASE_INSENSITIVE_ORDER;
+        }
+    }
+}
+```
+
+`Comparable` 인터페이스를 구현하는 `String` 클래스는 자체 정렬 방법인 사전식 순서를 제공합니다.
+
+동시에 `CASE_INSENSITIVE_ORDER`라는 `Comparator`를 제공하여 대소문자를 무시하고 비교하는 정렬 방법을 제공합니다.
+
 ### `Comparator`의 메서드
 
 |       메서드       |                      설명                      |                                    사용법                                     |
@@ -118,6 +171,12 @@ public final class Integer extends Number
 다형성과 전략 패턴을 활용하여 객체의 비교 방법을 외부에서 정의할 수 있게 하여 기존 코드를 변경하지 않고도 비교 방식을 쉽게 확장하거나 변경할 수 있게 합니다.
 
 이는 유연성과 재사용성을 증가시키며, 정렬 방식을 동적으로 변경할 수 있는 능력을 제공합니다.
+
+## 결론
+
+기존에는 인지하지 못했던 `Comparable`과 `Comparator`의 차이를 객체 지향 관점에서 살펴보았습니다.
+
+상황에 따라 `Comparable`과 `Comparator`를 적절히 사용하여 객체의 정렬 방법을 정의하여 사용하면 좋을 것 같습니다.
 
 ## REF
 
