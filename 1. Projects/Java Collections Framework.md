@@ -21,7 +21,7 @@ date_created: 2024-03-25 17:58
 	- [ ] HashSet
 	- [ ] LinkedHashSet
 	- [ ] TreeSet
-- [ ] Map
+- [ ] [Map](Map.md)
 	- [ ] HashMap
 		- [ ] LinkedHashMap
 	- [ ] TreeMap
