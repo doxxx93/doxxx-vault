@@ -6,6 +6,7 @@ date_created: 2024-03-25 17:58
 # Java Collections Framework
 
 ==THE GOAL==
+
 - [ ] List
 	- [ ] ArrayList
 	- [ ] LinkedList
