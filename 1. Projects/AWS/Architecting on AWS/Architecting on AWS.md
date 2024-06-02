@@ -1,0 +1,9 @@
+%% Begin Waypoint %%
+- [모듈 1 아키텍팅 기본 사항](./%EB%AA%A8%EB%93%88%201%20%EC%95%84%ED%82%A4%ED%85%8D%ED%8C%85%20%EA%B8%B0%EB%B3%B8%20%EC%82%AC%ED%95%AD.md)
+- [모듈 2 계정 보안](./%EB%AA%A8%EB%93%88%202%20%EA%B3%84%EC%A0%95%20%EB%B3%B4%EC%95%88.md)
+- [모듈 3 네트워킹 - 1](./%EB%AA%A8%EB%93%88%203%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20-%201.md)
+- [모듈 4 컴퓨팅](./%EB%AA%A8%EB%93%88%204%20%EC%BB%B4%ED%93%A8%ED%8C%85.md)
+- [모듈 5 스토리지](./%EB%AA%A8%EB%93%88%205%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80.md)
+- [모듈 6 데이터베이스 서비스](./%EB%AA%A8%EB%93%88%206%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%84%9C%EB%B9%84%EC%8A%A4.md)
+
+%% End Waypoint %%
