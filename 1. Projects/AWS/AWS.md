@@ -2,6 +2,7 @@
 - **[Architecting on AWS](./Architecting%20on%20AWS/Architecting%20on%20AWS.md)**
 - **[AWS Cloud Practitioner Essentials](./AWS%20Cloud%20Practitioner%20Essentials/AWS%20Cloud%20Practitioner%20Essentials.md)**
 - **[Containers Learning Plan](./Containers%20Learning%20Plan/Containers%20Learning%20Plan.md)**
+
 - **[Developing on AWS](./Developing%20on%20AWS/Developing%20on%20AWS.md)**
 - **Introduction to Database Migration**
 	- [AWS Migration Hub Primer (Korean)](./Introduction%20to%20Database%20Migration/AWS%20Migration%20Hub%20Primer%20(Korean).md)
