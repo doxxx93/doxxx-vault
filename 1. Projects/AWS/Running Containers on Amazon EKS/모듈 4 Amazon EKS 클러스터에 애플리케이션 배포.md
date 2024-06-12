@@ -33,3 +33,6 @@ url:
 ## 지식 확인
 
 ## 실습 2 준비
+
+[EKS Immersion Day](https://catalog.workshops.aws/eks-immersionday/en-US/introduction)
+
