@@ -39,6 +39,7 @@ $Y = WX + b$
 	- ![](Pasted%20image%2020240615184758.png)
 
 # Introduction to Machine Learning: Art of the Possible
+
 ![](Pasted%20image%2020240615184511.png)
 
 ## 기계 학습 작동 원리
@@ -47,3 +48,22 @@ $Y = WX + b$
 
 ![](Pasted%20image%2020240615184710.png)
 
+# Machine Learning Terminology and Process
+
+![](Pasted%20image%2020240615185802.png)
+
+# Planning a Machine Learning Project
+
+# Introduction to Machine Learning: Art of the Possible
+
+## 기계학습이란
+
+![](Pasted%20image%2020240615190344.png)
+
+# Building a Machine Learning Ready Organization
+
+# Exam Readiness: AWS Certified Machine Learning
+
+# 영역 1: 데이터 엔지니어링
+
+**영역 1.1: 기계 학습을 위한 데이터 저장소 생성**
