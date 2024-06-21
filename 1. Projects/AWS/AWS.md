@@ -11,6 +11,7 @@
 	- [실습](./Introduction%20to%20Database%20Migration/%EC%8B%A4%EC%8A%B5.md)
 - **[Machine Learning Learning Plan](./Machine%20Learning%20Learning%20Plan/Machine%20Learning%20Learning%20Plan.md)**
 
+- [Restricting S3 Bucket Access to CloudFront](./Restricting%20S3%20Bucket%20Access%20to%20CloudFront.md)
 - **[Running Containers on Amazon EKS](./Running%20Containers%20on%20Amazon%20EKS/Running%20Containers%20on%20Amazon%20EKS.md)**
 - **[Security Engineering on AWS](./Security%20Engineering%20on%20AWS/Security%20Engineering%20on%20AWS.md)**
 
